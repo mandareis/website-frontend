@@ -1,12 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import foo from "./index.css";
-import App from "./App";
+import "./AdminApp.css";
+import AdminApp from "./AdminApp";
 
-console.log(foo);
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AdminApp />
   </React.StrictMode>,
-  document.getElementById("root")
+  document.querySelector("div#root")
 );
