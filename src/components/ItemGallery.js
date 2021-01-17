@@ -68,7 +68,12 @@ const ItemGallery = () => {
             </div>
 
             <span className="repo-link-title">{item.title || item.topic}</span>
-            <a href={item.url} className="logo-type">
+            <a
+              href={item.url}
+              rel="noreferrer"
+              target="_blank"
+              className="logo-type"
+            >
               <i className="fas fa-external-link-alt fa-xs"></i>
             </a>
             <h6>{item.date}</h6>

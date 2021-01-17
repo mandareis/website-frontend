@@ -52,7 +52,7 @@ function App() {
             <div id="footer">
               <a
                 className="footer-colors"
-                href="https://www.linkedin.com/in/amanda-reis-b11a8416b/"
+                href="https://www.linkedin.com/in/amanda-depaula-reis/"
                 rel="noreferrer"
                 target="_blank"
               >
