@@ -30,7 +30,9 @@ const GenericList = ({ nudge, kind, onSelect }) => {
           {list.map((r, i) => {
             return (
               <div key={i}>
-                <a onClick={() => handlesClick(r.id)}>{r.title || r.topic}</a>
+                <a href="#!" onClick={() => handlesClick(r.id)}>
+                  {r.title || r.topic}
+                </a>
               </div>
             );
           })}

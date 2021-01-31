@@ -8,30 +8,33 @@ const AdminForm = (props) => {
   const [date, setDate] = useState("");
   const [languages, setLanguages] = useState("");
 
-  useEffect(async () => {
-    if (!props.currentlySelected) {
-      return;
-    }
-    const urls = {
-      repos: `/githubs/${props.currentlySelected.id}`,
-      links: `/links/${props.currentlySelected.id}`,
-    };
-    let response = await fetch(urls[props.currentlySelected.kind]);
-    if (response.ok) {
-      let data = await response.json();
-      if (props.currentlySelected.kind === "repos") {
-        setSelect("Repo");
-        setTitle(data.title);
-        setUrl(data.url);
-        setDate(data.date);
-        setLanguages(data.languages);
-      } else if (props.currentlySelected.kind === "links") {
-        setSelect("Link");
-        setTopic(data.topic);
-        setUrl(data.url);
-        setDate(data.date);
+  useEffect(() => {
+    async function fetchData() {
+      if (!props.currentlySelected) {
+        return;
+      }
+      const urls = {
+        repos: `/githubs/${props.currentlySelected.id}`,
+        links: `/links/${props.currentlySelected.id}`,
+      };
+      let response = await fetch(urls[props.currentlySelected.kind]);
+      if (response.ok) {
+        let data = await response.json();
+        if (props.currentlySelected.kind === "repos") {
+          setSelect("Repo");
+          setTitle(data.title);
+          setUrl(data.url);
+          setDate(data.date);
+          setLanguages(data.languages);
+        } else if (props.currentlySelected.kind === "links") {
+          setSelect("Link");
+          setTopic(data.topic);
+          setUrl(data.url);
+          setDate(data.date);
+        }
       }
     }
+    fetchData();
   }, [props.currentlySelected]);
 
   const handlesSubmit = async (e) => {

@@ -1,12 +1,33 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import foo from "./index.css";
+import AdminApp from "./AdminApp";
 import App from "./App";
 
-console.log(foo);
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+const mount = document.getElementById("root");
+console.log(`REACT_APP_BUILD_TARGET = ${process.env.REACT_APP_BUILD_TARGET}`);
+switch (process.env.REACT_APP_BUILD_TARGET) {
+  case "public":
+    ReactDOM.render(
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>,
+      mount
+    );
+    break;
+  case "admin":
+    ReactDOM.render(
+      <React.StrictMode>
+        <AdminApp />
+      </React.StrictMode>,
+      mount
+    );
+    break;
+  default:
+    ReactDOM.render(
+      <React.StrictMode>
+        <p>Unknown APP: {process.env.APP}</p>
+      </React.StrictMode>,
+      mount
+    );
+    break;
+}

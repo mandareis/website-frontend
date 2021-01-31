@@ -1,12 +1,10 @@
 .PHONY: build
-build: public/javascript/admin.js public/javascript/public.js
+build: build/ok.txt
 
-public/javascript/admin.js: node_modules/.ok $(shell find ./src -type f -name \*.js)
-	NODE_ENV=production ./node_modules/.bin/webpack --config webpack.admin.js
-
-public/javascript/public.js: node_modules/.ok $(shell find ./src -type f -name \*.js)
-	NODE_ENV=production ./node_modules/.bin/webpack --config webpack.public.js
+build/ok.txt: node_modules/.ok $(shell find src -type f)
+	npm run build
+	date > $@
 
 node_modules/.ok: package.json
-	yarn
+	npm i
 	touch $@

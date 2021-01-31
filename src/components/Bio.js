@@ -1,15 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import avatar from "../images/amanda-selfie.jpeg";
 
 const Bio = () => {
   return (
     <div>
       <div className="inner-container-bio">
-        <img
-          src="http://localhost:8080/images/amanda-selfie.jpeg"
-          alt="avatar"
-          className="avatar center"
-        ></img>
+        <img src={avatar} alt="avatar" className="avatar center"></img>
         <h2 id="full-name">Amanda Reis</h2>
         <p id="bio-p">(she/her)</p>
         <p id="bio-p">
