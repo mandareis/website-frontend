@@ -25,7 +25,9 @@ switch (process.env.REACT_APP_BUILD_TARGET) {
   default:
     ReactDOM.render(
       <React.StrictMode>
-        <p>Unknown APP: {process.env.APP}</p>
+        <p>
+          Unknown REACT_APP_BUILD_TARGET: {process.env.REACT_APP_BUILD_TARGET}
+        </p>
       </React.StrictMode>,
       mount
     );

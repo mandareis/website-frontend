@@ -7,7 +7,7 @@ const Bio = () => {
     <div>
       <div className="inner-container-bio">
         <img src={avatar} alt="avatar" className="avatar center"></img>
-        <h2 id="full-name">Amanda Reis</h2>
+        <h2 id="full-name">Amanda de Paula</h2>
         <p id="bio-p">(she/her)</p>
         <p id="bio-p">
           Junior software engineer based in San Francisco, Ca. My passions
