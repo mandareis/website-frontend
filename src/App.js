@@ -46,29 +46,27 @@ function App() {
           </Route>
         </Switch>
       </Router>
-      <div className="container">
-        <div className="row">
-          <div className="col">
-            <div id="footer">
-              <a
-                className="footer-colors"
-                href="https://www.linkedin.com/in/amanda-depaula-reis/"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <i className="fab fa-linkedin"></i>
-                &nbsp; LinkedIn
-              </a>
-              <a
-                className="footer-colors"
-                href="https://github.com/mandareis"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <i className="fab fa-github"></i>
-                &nbsp; GitHub
-              </a>
-            </div>
+      <div className="row">
+        <div className="col">
+          <div id="footer">
+            <a
+              className="footer-colors"
+              href="https://www.linkedin.com/in/amanda-depaula-reis/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <i className="fab fa-linkedin"></i>
+              &nbsp; LinkedIn
+            </a>
+            <a
+              className="footer-colors"
+              href="https://github.com/mandareis"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <i className="fab fa-github"></i>
+              &nbsp; GitHub
+            </a>
           </div>
         </div>
       </div>
