@@ -44,8 +44,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
-      <div className="row">
-        {/* <div className="col"> */}
+      <div className="col">
         <div id="footer">
           <a
             className="footer-colors"
@@ -67,7 +66,6 @@ function App() {
           </a>
         </div>
       </div>
-      {/* </div> */}
     </div>
   );
 }
