@@ -19,25 +19,23 @@ function App() {
                 </div>
               </div>
               <div className="row justify-content-end">
-                <div className="col col-sm-12 col-md-6 col-lg-6">
+                <div className="col-sm-12 col-md-6 col-lg-6">
                   <Bio />
                 </div>
               </div>
             </div>
           </Route>
           <Route exact path="/contact">
-            <div className="container">
-              <div className="row justify-content-center">
-                <div className="col-sm-12 col-md-6 col-lg-6">
-                  <ContactForm />
-                </div>
+            <div className="row justify-content-center">
+              <div className="col-sm-12 col-md-6 col-lg-6">
+                <ContactForm />
               </div>
-              <div className="row justify-content-center">
-                <div id="back-btn-container">
-                  <Link to="/" id="back-btn">
-                    Go back <i className="fas fa-chevron-circle-left"></i>
-                  </Link>
-                </div>
+            </div>
+            <div className="row justify-content-center">
+              <div id="back-btn-container">
+                <Link to="/" id="back-btn">
+                  Go back <i className="fas fa-chevron-circle-left"></i>
+                </Link>
               </div>
             </div>
           </Route>
