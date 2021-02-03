@@ -59,6 +59,7 @@ textarea {
   border: none;
   outline: none;
   cursor: pointer;
+  height: 2.1em;
 }
 
 .form .btn:hover {
