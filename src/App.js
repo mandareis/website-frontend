@@ -19,7 +19,7 @@ function App() {
                 </div>
               </div>
               <div className="row justify-content-end">
-                <div className="col-4 col-sm-12 col-md-4 col-lg-4">
+                <div className="col col-sm-12 col-md-6 col-lg-6">
                   <Bio />
                 </div>
               </div>
