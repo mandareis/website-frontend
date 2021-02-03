@@ -19,7 +19,7 @@ function App() {
                 </div>
               </div>
               <div className="row justify-content-end">
-                <div className="col-sm-12 col-md-6 col-lg-6">
+                <div className="col-4 col-6 col-8 ">
                   <Bio />
                 </div>
               </div>
@@ -45,29 +45,29 @@ function App() {
         </Switch>
       </Router>
       <div className="row">
-        <div className="col">
-          <div id="footer">
-            <a
-              className="footer-colors"
-              href="https://www.linkedin.com/in/amanda-depaula-reis/"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <i className="fab fa-linkedin"></i>
-              &nbsp; LinkedIn
-            </a>
-            <a
-              className="footer-colors"
-              href="https://github.com/mandareis"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <i className="fab fa-github"></i>
-              &nbsp; GitHub
-            </a>
-          </div>
+        {/* <div className="col"> */}
+        <div id="footer">
+          <a
+            className="footer-colors"
+            href="https://www.linkedin.com/in/amanda-depaula-reis/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <i className="fab fa-linkedin"></i>
+            &nbsp; LinkedIn
+          </a>
+          <a
+            className="footer-colors"
+            href="https://github.com/mandareis"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <i className="fab fa-github"></i>
+            &nbsp; GitHub
+          </a>
         </div>
       </div>
+      {/* </div> */}
     </div>
   );
 }
