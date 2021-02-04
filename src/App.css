@@ -11,7 +11,7 @@ body {
 }
 #gallery-container {
   display: flex;
-  /* overflow-y: auto; */
+  overflow-y: auto;
   padding: 0em 1em;
 }
 #gallery-container .rc-darken {
