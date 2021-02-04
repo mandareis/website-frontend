@@ -11,7 +11,7 @@ body {
 }
 #gallery-container {
   display: flex;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   padding: 0em 1em;
 }
 #gallery-container .rc-darken {
@@ -249,4 +249,13 @@ textarea {
 
 .current-project {
   margin: 1em;
+}
+
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+.example {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
