@@ -250,12 +250,3 @@ textarea {
 .current-project {
   margin: 1em;
 }
-
-.example::-webkit-scrollbar {
-  display: none;
-}
-
-.example {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
