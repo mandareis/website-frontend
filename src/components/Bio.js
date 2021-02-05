@@ -13,8 +13,8 @@ const Bio = () => {
 
         <div id="bio-p">
           <p id="bio-p">(she/her)</p>
-          Junior software engineer based in San Francisco, Ca. My passions
-          include coffee, React.js, chocolate and fine wine.
+          Front end engineer based in San Francisco, Ca. My passions include
+          coffee, React.js, chocolate and fine wine.
           <div className="current-project" style={{ textAlign: "center" }}>
             <p>Ongoing project:</p>
             <a
