@@ -5,6 +5,7 @@ import Bio from "./components/Bio";
 import ContactForm from "./components/ContactForm";
 import ItemGallery from "./components/ItemGallery";
 import NotFound from "./components/NotFound";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
@@ -18,10 +19,13 @@ function App() {
                   <ItemGallery />
                 </div>
               </div>
-              <div className="row justify-content-end">
+              <div className="row">
                 <div className="col-sm-4 col-md-6 col-lg-6 ">
-                  <Bio />
+                  <NavBar />
                 </div>
+              </div>
+              <div className="logo">
+                <h1>A.D.R</h1>
               </div>
             </div>
           </Route>
@@ -39,13 +43,27 @@ function App() {
               </div>
             </div>
           </Route>
+          <Route exact path="/about">
+            <div className="row justify-content-center">
+              <div className="col-sm-12 col-md-6 col-lg-6">
+                <Bio />
+              </div>
+            </div>
+            <div className="row justify-content-center">
+              <div id="back-btn-container">
+                <Link to="/" id="back-btn">
+                  Go back <i className="fas fa-chevron-circle-left"></i>
+                </Link>
+              </div>
+            </div>
+          </Route>
           <Route>
             <NotFound />
           </Route>
         </Switch>
       </Router>
       <div className="col">
-        <div id="footer">
+        <div className="footer">
           <a
             className="footer-colors"
             href="https://www.linkedin.com/in/amanda-depaula-reis/"
