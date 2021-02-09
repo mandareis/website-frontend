@@ -9,11 +9,6 @@ body {
   font-size: 30px;
 }
 
-.logo {
-  text-decoration: none;
-  float: right;
-}
-
 #gallery-container {
   display: flex;
   overflow-y: auto;
@@ -280,4 +275,25 @@ span {
 
 .navbar {
   margin-top: 3em;
+}
+
+.logo {
+  margin-top: 12em;
+}
+
+.logo p {
+  font-size: 65px;
+  text-align: right;
+}
+
+.logo #name-home {
+  font-size: 55px;
+}
+
+.logo #title-home {
+  font-size: 44px;
+}
+
+.navbar-home {
+  float: left;
 }

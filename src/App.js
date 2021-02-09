@@ -20,12 +20,16 @@ function App() {
                 </div>
               </div>
               <div className="row">
-                <div className="col-sm-4 col-md-6 col-lg-6 ">
-                  <NavBar />
+                <div className="col-12 col-sm-12 col-md-10 col-lg-12">
+                  <div className="navbar-home">
+                    <NavBar />
+                  </div>
+                  <div className="logo">
+                    <p>Hi,</p>
+                    <p id="name-home">my name is Amanda De Paula</p>
+                    <p id="title-home">and I am a Software Developer.</p>
+                  </div>
                 </div>
-              </div>
-              <div className="logo">
-                <h1>A.D.R</h1>
               </div>
             </div>
           </Route>
