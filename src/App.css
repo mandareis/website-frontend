@@ -217,6 +217,25 @@ textarea {
   width: 100px;
   margin-bottom: 2em;
 }
+@media only screen and (max-width: 600px) {
+  .inner-repo-container {
+    width: 270px;
+    height: 270px;
+  }
+  .intro {
+    font-size: 20px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.navbar {
+  padding: 0em;
+}
 .inner-repo-container {
   /* width: 200px; */
   height: 200px;
@@ -267,9 +286,6 @@ textarea {
   color: hsl(165, 20%, 98%);
   font-size: 20px;
 }
-/* .repo-container {
-  display: flex;
-} */
 
 .inner-repo-container .fa-external-link-alt {
   display: contents;
@@ -311,10 +327,6 @@ span {
 .nav-item:hover {
   color: hsl(178, 27%, 80%);
 }
-
-/* .navbar {
-  margin-top: 3em;
-} */
 
 .intro p {
   font-size: 65px;

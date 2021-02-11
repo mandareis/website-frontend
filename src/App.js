@@ -23,12 +23,12 @@ function App() {
                 </div>
               </div>
               <div className="row">
-                <div className="col-3">
+                <div className="col">
                   <div className="navbar-home">
                     <NavBar />
                   </div>
                 </div>
-                <div className="col-9">
+                <div className="col-sm-9">
                   <div className="intro">
                     <p>Hi,</p>
                     <p id="name-home">my name is Amanda De Paula</p>
