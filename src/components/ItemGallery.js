@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import NameLogo from "./NameLogo";
 
 const ItemGallery = () => {
   const carousel = useRef(null);
@@ -94,6 +95,9 @@ const ItemGallery = () => {
 
   return (
     <div>
+      <div className="logo-pages">
+        <NameLogo />
+      </div>
       <div ref={carousel} className="gallery-container">
         {repo}
       </div>

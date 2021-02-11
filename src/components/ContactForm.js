@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-
+import NameLogo from "./NameLogo";
 const ContactFormInput = (props) => {
   return (
     <div className={`input-container ${props.longtext ? "ic-big" : ""}`}>
@@ -42,42 +42,51 @@ const ContactForm = () => {
     done = true;
   }
   return (
-    <div className="inner-container">
-      <div className="form">
-        {done && !timerDone ? "Thank You" : null}
-        <form
-          ref={form}
-          action="https://submit-form.com/Z78IPcBD"
-          method="post"
-        >
-          <ContactFormInput icon="fa-user-alt" placeholder="Name" name="Name" />
-          <ContactFormInput icon="fa-at" placeholder="Email" name="Email" />
-          <ContactFormInput
-            icon="fa-comment-alt"
-            placeholder="e.g. Hello!"
-            name="Message"
-            longtext
-          />
-          <input
-            type="hidden"
-            name="_redirect"
-            value="http://localhost:3000/contact?done=1"
-          />
-          <input type="hidden" name="_append" value="false" />
-          <div>
+    <div>
+      <div className="logo-pages">
+        <NameLogo />
+      </div>
+      <div className="inner-container-contact-form">
+        <div className="form">
+          {done && !timerDone ? "Thank You" : null}
+          <form
+            ref={form}
+            action="https://submit-form.com/Z78IPcBD"
+            method="post"
+          >
+            <ContactFormInput
+              icon="fa-user-alt"
+              placeholder="Name"
+              name="Name"
+            />
+            <ContactFormInput icon="fa-at" placeholder="Email" name="Email" />
+            <ContactFormInput
+              icon="fa-comment-alt"
+              placeholder="e.g. Hello!"
+              name="Message"
+              longtext
+            />
+            <input
+              type="hidden"
+              name="_redirect"
+              value="http://localhost:3000/contact?done=1"
+            />
+            <input type="hidden" name="_append" value="false" />
             <div>
-              <button
-                type="submit"
-                className="btn"
-                onClick={() => {
-                  form.current.submit();
-                }}
-              >
-                <i className="far fa-paper-plane fa-lg"></i>
-              </button>
+              <div>
+                <button
+                  type="submit"
+                  className="btn"
+                  onClick={() => {
+                    form.current.submit();
+                  }}
+                >
+                  <i className="far fa-paper-plane fa-lg"></i>
+                </button>
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   );
