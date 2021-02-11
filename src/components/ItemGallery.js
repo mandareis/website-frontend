@@ -46,7 +46,7 @@ const ItemGallery = () => {
     return (
       <motion.div
         key={i}
-        whileHover={{ scale: 1.12, transition: { duration: 0.2 } }}
+        whileHover={{ scale: 1.07, transition: { duration: 0.2 } }}
       >
         <div
           className={`repo-container ${
