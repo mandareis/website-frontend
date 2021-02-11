@@ -69,7 +69,7 @@ const ContactForm = () => {
             <input
               type="hidden"
               name="_redirect"
-              value="http://localhost:3000/contact?done=1"
+              value="amanda.depaula.xyz/contact?done=1"
             />
             <input type="hidden" name="_append" value="false" />
             <div>
