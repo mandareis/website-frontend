@@ -1,16 +1,16 @@
 import * as React from "react";
 function NameLogo() {
   return (
-    <svg
-      id="logo"
-      version="1.0"
-      xmlns="http://www.w3.org/2000/svg"
-      width="2048.000000pt"
-      height="2048.000000pt"
-      viewBox="0 0 2048.000000 2048.000000"
-      preserveAspectRatio="xMidYMid"
-    >
-      <a href="/">
+    <a href="/">
+      <svg
+        id="logo"
+        version="1.0"
+        xmlns="http://www.w3.org/2000/svg"
+        width="2048.000000pt"
+        height="2048.000000pt"
+        viewBox="0 0 2048.000000 2048.000000"
+        preserveAspectRatio="xMidYMid"
+      >
         <g
           transform="translate(0.000000,2048.000000) scale(0.100000,-0.100000)"
           fill="#000000"
@@ -63,8 +63,8 @@ m3444 -38 c0 -8 -1090 -2207 -1099 -2216 -3 -4 -504 490 -1111 1097 l-1105
 418 488 19 26 39 46 44 45 4 -2 300 -585 656 -1296z"
           />
         </g>
-      </a>
-    </svg>
+      </svg>
+    </a>
   );
 }
 export default NameLogo;
