@@ -140,7 +140,6 @@ textarea {
 
 .input-container {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   margin-bottom: 15px;
 }
@@ -217,7 +216,7 @@ textarea {
   width: 100px;
   margin-bottom: 2em;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 872px) {
   .inner-repo-container {
     width: 270px;
     height: 270px;
@@ -230,6 +229,9 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .footer a {
+    padding: 0em;
   }
 }
 
