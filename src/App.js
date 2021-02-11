@@ -6,6 +6,7 @@ import ContactForm from "./components/ContactForm";
 import ItemGallery from "./components/ItemGallery";
 import NotFound from "./components/NotFound";
 import NavBar from "./components/NavBar";
+import NameLogo from "./components/NameLogo";
 
 function App() {
   return (
@@ -16,15 +17,19 @@ function App() {
             <div className="container">
               <div className="row">
                 <div className="col">
-                  <ItemGallery />
+                  <div className="logo-type">
+                    <NameLogo />
+                  </div>
                 </div>
               </div>
               <div className="row">
-                <div className="col-12 col-sm-12 col-md-10 col-lg-12">
+                <div className="col-3">
                   <div className="navbar-home">
                     <NavBar />
                   </div>
-                  <div className="logo">
+                </div>
+                <div className="col-9">
+                  <div className="intro">
                     <p>Hi,</p>
                     <p id="name-home">my name is Amanda De Paula</p>
                     <p id="title-home">and I am a Software Developer.</p>
@@ -37,6 +42,20 @@ function App() {
             <div className="row justify-content-center">
               <div className="col-sm-12 col-md-6 col-lg-6">
                 <ContactForm />
+              </div>
+            </div>
+            <div className="row justify-content-center">
+              <div id="back-btn-container">
+                <Link to="/" id="back-btn">
+                  Go back <i className="fas fa-chevron-circle-left"></i>
+                </Link>
+              </div>
+            </div>
+          </Route>
+          <Route exact path="/projects">
+            <div className="row justify-content-center">
+              <div className="col">
+                <ItemGallery />
               </div>
             </div>
             <div className="row justify-content-center">

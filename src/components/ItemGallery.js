@@ -59,25 +59,33 @@ const ItemGallery = () => {
           }}
         >
           <div className="inner-repo-container">
-            <div className="logo-type">
+            <div className="logo-type-projects">
               {item.type === "repo" ? (
-                <i className="fab fa-github"></i>
+                <i className="fab fa-github fa-lg"></i>
               ) : (
-                <i className="fab fa-dev"></i>
+                <i className="fab fa-dev fa-lg"></i>
               )}
             </div>
+            <div style={{ marginBottom: "1em" }}>
+              <span className="repo-link-title">
+                {item.title || item.topic}
+              </span>
+              <a
+                href={item.url}
+                rel="noreferrer"
+                target="_blank"
+                className="logo-type"
+              >
+                <i className="fas fa-external-link-alt fa-sm"></i>
+              </a>
+            </div>
 
-            <span className="repo-link-title">{item.title || item.topic}</span>
-            <a
-              href={item.url}
-              rel="noreferrer"
-              target="_blank"
-              className="logo-type"
-            >
-              <i className="fas fa-external-link-alt fa-xs"></i>
-            </a>
-            <h6>{item.date}</h6>
-            <h6>{item.languages}</h6>
+            <div style={{ marginBottom: "1em" }}>
+              <span>{item.date}</span>
+            </div>
+            <div>
+              <span style={{ marginBottom: "1em" }}>{item.languages}</span>
+            </div>
           </div>
         </div>
       </motion.div>
@@ -85,11 +93,11 @@ const ItemGallery = () => {
   });
 
   return (
-    <div className="gallery-outer">
-      <div ref={carousel} id="gallery-container">
+    <div>
+      <div ref={carousel} className="gallery-container">
         {repo}
       </div>
-      <div id="btn-container">
+      {/* <div id="btn-container">
         <button
           id="backward-btn"
           onClick={() => {
@@ -110,7 +118,7 @@ const ItemGallery = () => {
         >
           <i className="fas fa-chevron-circle-right"></i>
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };

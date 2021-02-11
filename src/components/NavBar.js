@@ -25,6 +25,7 @@ function NavBar() {
       <nav className="nav flex-column">
         <NavBarItem number="01" content="Home" href="/" />
         <NavBarItem number="02" content="About" href="/about" />
+        <NavBarItem number="03" content="Projects" href="/projects" />
         <NavBarItem number="04" content="Contact" href="/contact" />
       </nav>
     </div>
