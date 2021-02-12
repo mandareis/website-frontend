@@ -27,8 +27,7 @@ body {
 svg#logo {
   width: 200px;
   height: 200px;
-  margin-top: 2em;
-  /* margin: -32.5px; */
+  margin-top: 1em;
 }
 svg#logo path {
   stroke: hsl(178, 27%, 85%);
@@ -45,8 +44,8 @@ svg#logo:hover path {
 a {
   text-decoration: none;
   font-size: 16px;
-  padding: 20px;
-  margin: 20px;
+  /* padding: 20px;
+  margin: 20px; */
   color: hsl(178, 27%, 55%);
 }
 a:hover {

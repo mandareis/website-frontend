@@ -1,7 +1,7 @@
 import * as React from "react";
 function NameLogo() {
   return (
-    <a href="/">
+    <a id="logo-anchor" href="/">
       <svg
         id="logo"
         version="1.0"
