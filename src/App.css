@@ -29,6 +29,7 @@ svg#logo {
   height: 200px;
   margin-top: 1em;
 }
+
 svg#logo path {
   stroke: hsl(178, 27%, 85%);
   stroke-width: 75px;
@@ -44,8 +45,8 @@ svg#logo:hover path {
 a {
   text-decoration: none;
   font-size: 16px;
-  /* padding: 20px;
-  margin: 20px; */
+
+  /* margin: 20px; */
   color: hsl(178, 27%, 55%);
 }
 a:hover {
@@ -185,6 +186,10 @@ textarea {
   color: hsl(165, 20%, 78%);
 }
 
+.footer a {
+  display: inline-block;
+  margin: 20px;
+}
 .inner-container-contact-form {
   padding: 1em;
   border-radius: 0.75em;
@@ -320,10 +325,6 @@ textarea {
   display: flex;
   color: white;
 }
-/* 
-span {
-  margin: 5px;
-} */
 
 .nav-item:hover {
   color: hsl(178, 27%, 80%);
