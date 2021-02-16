@@ -71,7 +71,7 @@ const ItemGallery = () => {
               <span className="repo-link-title">
                 {item.title || item.topic}
               </span>
-              &nbsp;
+              &nbsp; &nbsp;
               <a
                 href={item.url}
                 rel="noreferrer"
