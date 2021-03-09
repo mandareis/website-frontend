@@ -35,12 +35,15 @@ function App() {
                       getBeforeInit={(instance) => {
                         instance
                           .type("Hi")
+                          .pause(500)
+                          .break()
                           .type("  my name is Amanda de Paula")
                           .pause(750)
                           .delete(8)
                           .pause(500)
                           .type("De Paula")
                           .type(" and I am a Software Developer.");
+
                         return instance;
                       }}
                       // options={{
@@ -56,9 +59,6 @@ function App() {
                       //   },
                       // }}
                     />
-                    {/* <p>Hi,</p>
-                    <p id="name-home">my name is Amanda De Paula</p>
-                    <p id="title-home">and I am a Software Developer.</p> */}
                   </div>
                 </div>
               </div>
