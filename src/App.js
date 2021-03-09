@@ -1,3 +1,4 @@
+import TypeIt from "typeit-react";
 import "./App.css";
 import React from "react";
 import { Route, BrowserRouter as Router, Link, Switch } from "react-router-dom";
@@ -30,9 +31,34 @@ function App() {
                 </div>
                 <div className="col-sm-9">
                   <div className="intro">
-                    <p>Hi,</p>
+                    <TypeIt
+                      getBeforeInit={(instance) => {
+                        instance
+                          .type("Hi")
+                          .type("  my name is Amanda de Paula")
+                          .pause(750)
+                          .delete(8)
+                          .pause(500)
+                          .type("De Paula")
+                          .type(" and I am a Software Developer.");
+                        return instance;
+                      }}
+                      // options={{
+                      //   strings: [
+                      //     "Hi",
+                      //     "my name is Amanda de Paula",
+                      //     "and I am a Software Developer.",
+                      //   ],
+                      //   speed: 50,
+                      //   waitUntilVisible: true,
+                      //   afterComplete: function (step, instance) {
+                      //     instance.destroy();
+                      //   },
+                      // }}
+                    />
+                    {/* <p>Hi,</p>
                     <p id="name-home">my name is Amanda De Paula</p>
-                    <p id="title-home">and I am a Software Developer.</p>
+                    <p id="title-home">and I am a Software Developer.</p> */}
                   </div>
                 </div>
               </div>

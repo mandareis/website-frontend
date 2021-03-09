@@ -330,9 +330,9 @@ textarea {
   color: hsl(178, 27%, 80%);
 }
 
-.intro p {
+/* .intro p {
   font-size: 65px;
-  text-align: right;
+ 
 }
 
 .intro #name-home {
@@ -341,8 +341,12 @@ textarea {
 
 .intro #title-home {
   font-size: 44px;
-}
+} */
 
+.intro {
+  text-align: center;
+  font-size: 44px;
+}
 .navbar-home {
   display: flex;
   flex-direction: column;
