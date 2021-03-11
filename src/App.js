@@ -42,22 +42,11 @@ function App() {
                           .delete(8)
                           .pause(500)
                           .type("De Paula")
+                          .break()
                           .type(" and I am a Software Developer.");
 
                         return instance;
                       }}
-                      // options={{
-                      //   strings: [
-                      //     "Hi",
-                      //     "my name is Amanda de Paula",
-                      //     "and I am a Software Developer.",
-                      //   ],
-                      //   speed: 50,
-                      //   waitUntilVisible: true,
-                      //   afterComplete: function (step, instance) {
-                      //     instance.destroy();
-                      //   },
-                      // }}
                     />
                   </div>
                 </div>
