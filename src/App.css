@@ -338,3 +338,7 @@ textarea {
   display: flex;
   flex-direction: column;
 }
+
+.lg-icons {
+  padding: 1em;
+}
